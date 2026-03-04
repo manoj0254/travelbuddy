@@ -28,7 +28,6 @@
         drop-shadow-xl drop-shadow-2xl'>
           
         <h2 className={`flex align-center font-semibold text-xl ${h2Style}`}><TbWindsock />Weather</h2>
-        {/* <p>date: {new Date(weather.dt * 1000).toLocaleString()}</p> */}
         {weather && (
           <div>
             <p className='font-bold text-2xl mb-10'>
@@ -47,19 +46,19 @@
               </div>
               <div>
                   <img 
-  src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} 
-  alt={weather.weather[0].description} 
-  className="w-20 h-20"
-/>
+                    src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} 
+                    alt={weather.weather[0].description} 
+                    className="w-20 h-20"
+                  />
                   <p className='font-semibold font-size-2x'>{weather.weather[0].main}</p>
                   <p>{weather.weather[0].description .split(" ") .map(word => word.charAt(0).toUpperCase() + word.slice(1)) .join(" ")}</p>
               </div>
             </div>
             
             <div className='text-black rounded-2xl vh-100 p-5
-        bg-[#d6e2ee]
-        borer border-solid border-2 border-[#e3effa]
-        drop-shadow-xl drop-shadow-xl mt-2'>
+              bg-[#d6e2ee]
+              borer border-solid border-2 border-[#e3effa]
+              drop-shadow-xl drop-shadow-xl mt-2'>
               <div className="grid grid-cols-3 gap-4 text-left mb-3">
                 <div> <p>Wind Speed: {weather.wind.speed} m/s</p></div>
                 <div><p>Pressure: {weather.main.pressure} hPa</p></div>
