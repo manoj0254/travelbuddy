@@ -1,5 +1,5 @@
 // styles.js
-export const inputStyle = 'rounded-l border border-green-200 bg-white p-3 text-2xl';
+export const inputStyle = 'rounded-l-lg border border-green-200 bg-white p-3 text-2xl';
 export const addTaskBtn = 'bg-[#5183a8] p-3 border border-green-200 rounded-r text-2xl text-white';
 export const btnStyles = 'bg-[#70a6cf] rounded px-5 px-2 text-white hover:text-white border';
 
